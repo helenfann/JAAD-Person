@@ -14,8 +14,13 @@ __pycache__/
 *$py.class
 *.pyc
 
-# CSV data files (optional - you might want to include small ones)
+# Large CSV data files (exclude large datasets, but allow small output files)
+# If you want to include specific CSV files, add them with: !filename.csv
 *.csv
+
+# Exception: Include small output/result CSV files
+!frame_by_frame_behaviour_only_labelled.csv
+# Add other specific CSV files you want to include here
 
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints/
